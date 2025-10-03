@@ -1,4 +1,4 @@
- # Android (Quest) BLE Fitness Plugin for Godot
+ # Android BLE Fitness Plugin for Godot
 
 ## Usage
 ### add plugin to Godot
@@ -46,10 +46,12 @@ call bluetoothReady() to verify bluetooth in working and has permissions.
 - set compiler options to JavaVersion.VERSION_17
 -add to the root of the file
 ```
-val pluginName = "AndroidBLEPlugin"
+val pluginName = "android-ble-plugin"
 val pluginPackageName = "com.goshawkgames.androidbleplugin"
 val pluginClassName = "AndroidBLEPlugin"
 ```
+
+pluginName will form part of the filename that Godot will look for (i.e. *android_ble_plugin-release.aar*) as defined in export_plugin.gd
 
 Under the "android" section add:
 ```

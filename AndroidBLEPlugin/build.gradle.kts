@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
 }
 
-val pluginName = "AndroidBLEPlugin"
+val pluginName = "android_ble_plugin"
 val pluginPackageName = "com.goshawkgames.androidbleplugin"
 val pluginClassName = "AndroidBLEPlugin"
 
@@ -13,7 +13,7 @@ android {
     compileSdk = 36
 
     defaultConfig {
-        minSdk = 35
+        minSdk = 31
 
         manifestPlaceholders["godotPluginName"] = pluginName
         manifestPlaceholders["godotPluginPackageName"] = pluginPackageName
